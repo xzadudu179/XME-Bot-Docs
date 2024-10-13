@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>XME-Bot 说明文档</title>
+    <title>说明文档 | XME-Bot</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport"
@@ -217,8 +217,33 @@
                     }
                   });
                 });
-                observer.observe(mainElement, { attributes: true });
+
                 // 初始化并第一次加载完成数据后调用，没有参数。
+
+                // 获取当前页面的主域名
+                const currentDomain = window.location.hostname;
+
+                // 遍历所有的 <a> 标签
+                  // console.log("sstart")
+                  document.querySelectorAll('#main a').forEach(function(link) {
+                    // 获取链接的 href
+                    const linkHref = link.href;
+
+                    // 判断链接是否是外部链接
+
+                    if (linkHref && link.hostname !== currentDomain && linkHref.startsWith('http')) {
+                      const marker = document.createElement('i');
+                      marker.textContent = ''; // 添加 ^ 符号
+                      marker.classList.add('fa-regular');
+                      marker.classList.add('fa-arrow-up-right-from-square')
+                      marker.style.fontSize = '0.8em'
+                      marker.style.marginLeft = '3px'
+
+                      // 在链接后面插入这个符号
+                      link.insertAdjacentElement('afterend', marker);
+                    }
+                });
+                observer.observe(mainElement, { attributes: true });
               });
             }
           ]
