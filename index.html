@@ -19,14 +19,31 @@
       .github-corner {
         z-index: 20;
       }
+
       #main blockquote {
         background-color: #5a5fd022;
-        padding: 5px 15px;
+        padding: 5px 22px;
         border-radius: 10px;
+      }
+
+      #main pre {
+        border-radius: 10px;
+        background-color: #32375910;
+      }
+
+      #main pre code {
+        padding: 1rem 0;
+        background-color: transparent;
       }
 
       #main blockquote p {
         color: #323759bb;
+      }
+
+      #main blockquote p:last-child {
+        color: #323759bb;
+        position: relative;
+        top: 3px;
       }
       .app-nav {
         padding: 0;
@@ -45,6 +62,33 @@
         display: flex;
         justify-content: right;
         align-items: center;      /* 垂直居中 */
+      }
+
+      .sidebar-toggle {
+        margin:10px;
+        width: auto;
+      }
+
+      .markdown-section code {
+        color: #5d7afc;
+      }
+
+      .sidebar-toggle-button {
+        padding: 8px;
+        /* box-shadow: 0 0 10px #5685; */
+        background-color: #fff;
+        border: 2px solid #5a5fd033;
+        border-radius: 10px;
+      }
+
+      .sidebar-toggle span {
+        width: 20px;
+        height: 3px;
+        margin-bottom: 5px;
+      }
+
+      .sidebar-toggle span:last-child {
+        margin-bottom: 0;
       }
 
       main.hidden ~ nav.app-nav {
@@ -74,6 +118,7 @@
 
       * {
         font-family: 'Geist Variable', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif, 'Noto Sans SC', sans-serif;
+        font-size: 1.02em;
       }
 
       .app-nav ul {
@@ -85,8 +130,12 @@
         align-items: center;      /* 垂直居中 */
       }
 
+      .cover-main img {
+        height: 250px;
+      }
+
       .content {
-        max-width: 1600px;
+        max-width: 1500px;
         margin: auto;
         /* box-shadow: 0 0 20px #5682; */
         /* border: 1px solid #5682; */
@@ -134,12 +183,17 @@
         .sidebar {
           padding-top: 30px;
         }
+        body.close .sidebar-toggle {
+          width: auto;
+          background-color: transparent;
+        }
       }
 
       #main::after {
           border-top: 1px solid #5682;
           content: "Powered By docsify";
           display: block;
+          margin: auto;
           padding: 20px 10px;
           width: 100%;
       }
@@ -192,6 +246,29 @@
 
                 // 每次路由切换时数据全部加载完成后调用，没有参数。
                 // ...
+                                // 获取当前页面的主域名
+                const currentDomain = window.location.hostname;
+
+                // 遍历所有的 <a> 标签
+                  // console.log("sstart")
+                  document.querySelectorAll('#main a').forEach(function(link) {
+                    // 获取链接的 href
+                    const linkHref = link.href;
+
+                    // 判断链接是否是外部链接
+
+                    if (linkHref && link.hostname !== currentDomain && linkHref.startsWith('http')) {
+                      const marker = document.createElement('i');
+                      marker.textContent = ''; // 添加 ^ 符号
+                      marker.classList.add('fa-regular');
+                      marker.classList.add('fa-arrow-up-right-from-square')
+                      marker.style.fontSize = '0.8em'
+                      marker.style.marginLeft = '3px'
+
+                      // 在链接后面插入这个符号
+                      link.insertAdjacentElement('afterend', marker);
+                    }
+                });
               });
 
               hook.mounted(function() {
@@ -219,30 +296,6 @@
                 });
 
                 // 初始化并第一次加载完成数据后调用，没有参数。
-
-                // 获取当前页面的主域名
-                const currentDomain = window.location.hostname;
-
-                // 遍历所有的 <a> 标签
-                  // console.log("sstart")
-                  document.querySelectorAll('#main a').forEach(function(link) {
-                    // 获取链接的 href
-                    const linkHref = link.href;
-
-                    // 判断链接是否是外部链接
-
-                    if (linkHref && link.hostname !== currentDomain && linkHref.startsWith('http')) {
-                      const marker = document.createElement('i');
-                      marker.textContent = ''; // 添加 ^ 符号
-                      marker.classList.add('fa-regular');
-                      marker.classList.add('fa-arrow-up-right-from-square')
-                      marker.style.fontSize = '0.8em'
-                      marker.style.marginLeft = '3px'
-
-                      // 在链接后面插入这个符号
-                      link.insertAdjacentElement('afterend', marker);
-                    }
-                });
                 observer.observe(mainElement, { attributes: true });
               });
             }
