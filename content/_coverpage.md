@@ -2,9 +2,9 @@
 
 ![logo](/images/xme_avatar_round.png)
 
-# <span style="font-family:'Geist Variable', sans-serif;font-weight:300">XME-Bot <small>v0.1.0</small></span>
+# <span style="font-family:'Geist Variable', sans-serif;font-weight:300">XME-Bot <small>v0.1.1</small></span>
 
-> 基于 Nonebot1 的多功能 QQ 机器人。
+> 基于 Nonebot1 实现的多功能 QQ Bot。
 
 - 简单部署，直接使用
 - 完全开源，可随意修改功能
