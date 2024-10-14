@@ -84,7 +84,7 @@ XME-Bot 在接收到上面的消息后会返回例如：
 例如，这是一个简单 `rm` 指令的帮助：
 
 ``` Text
-指令 {__plugin_name__}
+指令 rm
 作用：显示帮助，或某个指令的帮助
 用法：
 - rm [OPTIONS] (文件名)
@@ -93,7 +93,7 @@ OPTIONS:
     -r, --recursive 递归删除指定目录和子目录的内容
     -f, --force 强制删除内容
 权限/可用范围：无
-别名：{', '.join(alias)}
+别名：remove, 移除
 ```
 
 其中 `OPTIONS` 是类 Shell 参数的内容，用户可以输入 `/rm -rf` 或 `rm -f` 之类的方法调用 `OPTIONS` 里说明的参数。
