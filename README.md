@@ -1,12 +1,3 @@
-# 开始使用
+# 个人制作 qq 机器人 [XME-Bot](https://github.com/xzadudu179/XME-bot-qq) 的帮助文档
 
-<script>
-    const mainElement = document.querySelector('main');
-    const navElement = document.querySelector('nav');
-
-    if (mainElement.classList.contains('hidden')) {
-      navElement.style.display = 'none';
-    } else {
-      navElement.style.display = '';
-    }
-</script>
+详情请查看 [https://docs.xme.179.life](https://docs.xme.179.life)
