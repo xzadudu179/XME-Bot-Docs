@@ -49,6 +49,7 @@
 }
 
 .sidebar-toggle {
+    background: transparent;
     margin: 10px;
     width: auto;
 }
@@ -64,6 +65,11 @@
     border: 2px solid #5a5fd033;
     border-radius: 10px;
 }
+
+/* .sidebar-toggle-button:hover {
+    border-color: #5d7afc;
+    background-color: #fff;
+} */
 
 .sidebar-toggle span {
     width: 20px;
@@ -153,11 +159,12 @@ main.hidden ~ nav.app-nav {
     align-items: center;
 }
 
-.sidebar nav ul li>ul>li {
+.sidebar nav ul li > ul > li {
     border: none;
     font-size: 0.9em;
 }
-.sidebar nav ul li>ul {
+
+.sidebar nav ul li > ul {
     width: 160px;
 }
 
