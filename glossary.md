@@ -106,4 +106,4 @@ OPTIONS:
 
 ### SUPERUSER
 
-SUPERUSER 指 XME-Bot 配置中设置的用户 QQ 号白名单。默认为 `1795886524` 也就是 Xme-Bot 的开发者[九镹](https://blog.xzadudu179.top/)
+SUPERUSER 指 XME-Bot 配置中设置的用户 QQ 号白名单。默认为 `1795886524` 也就是 Xme-Bot 的开发者[九镹](https://www.xzadudu179.top/)
