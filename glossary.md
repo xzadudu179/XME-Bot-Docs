@@ -107,3 +107,9 @@ OPTIONS:
 ### SUPERUSER
 
 SUPERUSER 指 XME-Bot 配置中设置的用户 QQ 号白名单。默认为 `1795886524` 也就是 Xme-Bot 的开发者[九镹](https://www.xzadudu179.top/)
+
+## 角色
+
+角色是 XME-Bot 里用于决定 bot 输出的文字内容的设置，通过不同的角色文件决定，功能有点类似语言模块？
+
+对 bot 使用 `whoru` 指令就可以看到 bot 当前的角色信息。
