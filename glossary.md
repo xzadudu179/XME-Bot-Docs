@@ -90,13 +90,12 @@ XME-Bot 在接收到上面的消息后会返回例如：
 - rm [OPTIONS] (文件名)
 OPTIONS:
     -h, --help  显示帮助
-    -r, --recursive 递归删除指定目录和子目录的内容
     -f, --force 强制删除内容
 权限/可用范围：无
 别名：remove, 移除
 ```
 
-其中 `OPTIONS` 是类 Shell 参数的内容，用户可以输入 `/rm -rf` 或 `rm -f` 之类的方法调用 `OPTIONS` 里说明的参数。
+其中 `OPTIONS` 是类 Shell 参数的内容，用户可以输入 `/rm -h` 或 `rm -f` 之类的方法调用 `OPTIONS` 里说明的参数。
 
 ## 权限
 
