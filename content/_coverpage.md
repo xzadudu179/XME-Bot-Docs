@@ -13,4 +13,4 @@
 [<i class="fa-light fa-paper-plane"></i> 快速开始](get_started)
 
 
-![](/images/desert1.jpg)
+![](https://image.179.life/images/desert1.jpg)

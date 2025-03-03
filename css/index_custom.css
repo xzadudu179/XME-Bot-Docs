@@ -138,8 +138,26 @@ main.hidden ~ nav.app-nav {
     font-size: 1em;
 }
 
+section.cover .cover-main > p:last-child a:last-child:hover {
+    color: var(--theme-color);
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+section.cover .cover-main > p:last-child a:first-child:hover {
+    color: white;
+}
+
 .cover-main img {
     height: 250px;
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform: scale(1);
+}
+
+.cover-main img:hover {
+    filter: drop-shadow(rgba(255, 221, 185, 0.5) 0px 0px 10px);
+    transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform: scale(1.05);
 }
 
 .content {
@@ -212,9 +230,9 @@ main {
 }
 
 .has-mask .mask {
-    background-color: #feda !important;
+    background-color: #fedb !important;
     opacity: 1 !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(13px);
 }
 
 section.cover .cover-main > p:last-child a:hover {
