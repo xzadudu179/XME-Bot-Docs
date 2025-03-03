@@ -1,8 +1,8 @@
 <!-- _coverpage.md -->
 
-![logo](/images/xme_avatar_round.png)
+![logo](https://image.179.life/images/deon_avatar_round.png)
 
-# <span style="font-family:'Geist Variable', sans-serif;font-weight:300">XME-Bot <small>v0.1.1</small></span>
+# <span style="font-family:'Geist Variable', sans-serif;font-weight:300">XME-Deon-Bot <small>v0.3.1</small></span>
 
 > 基于 Nonebot1 实现的多功能 QQ Bot。
 
@@ -13,4 +13,4 @@
 [<i class="fa-light fa-paper-plane"></i> 快速开始](get_started)
 
 
-![](https://image.179.life/images/background-light.jpg)
+![](/images/desert1.jpg)

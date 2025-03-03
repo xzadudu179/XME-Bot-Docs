@@ -3,7 +3,7 @@
 }
 
 #main blockquote {
-    background-color: #5a5fd022;
+    background-color: #e2a05a22;
     padding: 5px 22px;
     border-radius: 10px;
 }
@@ -34,7 +34,8 @@
     /* padding-right: 100px; */
     /* box-shadow: 0px 0px 10px #5685; */
     border-bottom: 1px solid #5682;
-    color: #323739;
+    /* color: #323739; */
+    color: #3A404C;
     /* background:linear-gradient(120deg, rgba(216, 168, 255, 0.411) 0%, rgba(201, 209, 255, 0.507) 100%); */
     backdrop-filter: blur(10px);
     height: 65px;
@@ -55,15 +56,20 @@
 }
 
 .markdown-section code {
-    color: #5d7afc;
+    /* color: #5d7afc; */
+    color: #e08817;
 }
 
 .sidebar-toggle-button {
     padding: 8px;
     /* box-shadow: 0 0 10px #5685; */
     background-color: #fff;
-    border: 2px solid #5a5fd033;
+    border: 2px solid #e2a05a33;
     border-radius: 10px;
+}
+
+code .token .tag {
+    color: #e08817 !important;
 }
 
 /* .sidebar-toggle-button:hover {
@@ -86,7 +92,7 @@ main.hidden ~ nav.app-nav {
 }
 
 .app-nav ul:first-child::before {
-    content: 'XME-Bot';
+    content: 'XME-Deon-Bot';
     /* position: relative; */
     /* right: 40%; */
     font-size: 2em;
@@ -151,7 +157,7 @@ main.hidden ~ nav.app-nav {
 
 .sidebar nav ul li {
     width: 100%;
-    border-bottom: 1px solid #5a5fd033;
+    border-bottom: 1px solid #e2a05a33;
     padding: 12px 0;
     margin: 0;
     display: flex;
@@ -203,6 +209,16 @@ main {
         width: auto;
         background-color: transparent;
     }
+}
+
+.has-mask .mask {
+    background-color: #feda !important;
+    opacity: 1 !important;
+    backdrop-filter: blur(10px);
+}
+
+section.cover .cover-main > p:last-child a:hover {
+    color: #3A404C;
 }
 
 #main::after {

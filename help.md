@@ -1,6 +1,6 @@
 
 
-# XME-Bot 使用文档
+# XME-Deon-Bot (漠月) 使用文档
 
 <!-- > 目前还 (几乎) 没有任何内容 -->
 
@@ -83,7 +83,6 @@
 ## 功能列表
 
 ---
-
 ### [指令] 7timers
 
 - **作用**
@@ -114,6 +113,169 @@
   `7t`、 `晴天钟`
 
 ---
+
+### [插件] XME 宇宙
+
+- **作用**
+
+  需要获取用户信息的功能, 使用 /userhelp <功能名> 来查看详细的帮助。
+
+- **指令列表：**
+
+    #### coinrank
+
+  - **作用**
+
+    星币排行榜
+
+  - **用法**
+
+  ```Text
+  /coinrank <参数>
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
+  #### inventory
+
+  - **作用**
+
+    物品栏相关指令
+
+  - **用法**
+
+  ```Text
+  /inventory
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
+  #### lottery
+
+  - **作用**
+
+    抽奖
+
+  - **用法**
+
+  ```Text
+  /lottery (星币数量)
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
+  #### sendcoin
+
+  - **作用**
+
+    给人星币
+
+  - **用法**
+
+  ```Text
+  /sendcoin (at目标用户) (星币数量 以空格分隔)
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
+  #### sign
+
+  - **作用**
+
+    签到
+
+  - **用法**
+
+  ```Text
+  /sign
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
+  #### userinfo
+
+  - **作用**
+
+    查看个人信息
+
+  - **用法**
+
+  ```Text
+  /userinfo <at人>
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
+  #### userhelp
+
+  - **作用**
+
+    XME 宇宙用户功能帮助
+
+  - **用法**
+
+  ```Text
+  /userhelp <指令名或别名>
+  ```
+
+  - **权限/可用范围**
+
+    0. **在群内使用**
+
+  - **别名**
+
+    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+
+  ---
+
 
 ### [指令] alias
 
@@ -245,7 +407,7 @@
 
 - **权限/可用范围**
 
-  无
+  是 SUPERUSER
 
 - **别名**
 
@@ -258,7 +420,7 @@
 - **作用**
 
   让漠月帮忙决定事情吧！
-  漠月会因情况的不同而返回不同的结果，例如：只 choice 数字会返回 0~数字的随机数，choice一个数字范围比如 1~10 会返回 1~10 的随机数
+  漠月会因情况的不同而返回不同的结果，例如：只 choice 数字会返回 0 ~ 数字的随机数，choice一个数字范围比如 1 ~ 10 会返回 1 ~ 10 的随机数
 
 - **用法**
 
@@ -519,7 +681,7 @@ OPTIONS:
 - **作用**
 
   扔/捡来自各个群组的漂流瓶~
-  神秘力量入侵了大海...现在每捡一次漂流瓶都会让它更加混乱，也更容易碎掉...但是点赞可以让混乱值变少 嗷呜！
+  神秘力量入侵了大海...现在每捡一次漂流瓶都会让它更加混乱，也更容易碎掉...但是点赞可以让混乱值变少 owo
 
 - **指令列表：**
 
@@ -634,25 +796,47 @@ OPTIONS:
 
 ---
 
-### [指令] prevrecall
+### [指令] schtime
 
 - **作用**
 
-  防撤回功能相关
+  切换是否开启报时功能，报时功能会在每天的 `0` `8` `12` `20` 点进行报时，以及会告诉一些最新版本信息或是小提示
 
 - **用法**
 
 ``` Text
-/prevrecall <开|关|T|F>
+/schtime
 ```
 
 - **权限/可用范围**
 
-  在群聊内 & 是 SUPERUSER
+  在群聊内 & 是管理员或群主
 
 - **别名**
 
-  `防撤回`、 `precall`、 `防撤`、 `防撤回功能`
+  `报时`、 `stime`
+
+---
+
+### [指令] schtime
+
+- **作用**
+
+  切换是否开启报时功能，报时功能会在每天的 `0` `8` `12` `20` 点进行报时，以及会告诉一些最新版本信息或是小提示
+
+- **用法**
+
+``` Text
+/schtime
+```
+
+- **权限/可用范围**
+
+  在群聊内 & 是管理员或群主
+
+- **别名**
+
+  `报时`、 `stime`
 
 ---
 
@@ -898,170 +1082,6 @@ OPTIONS:
   `九九文章`、 `rss179`、 `posts179`、 `blogposts`、 `posts`、 `post`
 
 ---
-
-### [插件] 用户
-
-- **作用**
-
-  需要获取用户信息的功能, 使用 /userhelp <功能名> 来查看详细的帮助。
-
-- **指令列表：**
-
-    #### coinrank
-
-  - **作用**
-
-    星币排行榜
-
-  - **用法**
-
-  ```Text
-  /coinrank <参数>
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-  #### inventory
-
-  - **作用**
-
-    物品栏相关指令
-
-  - **用法**
-
-  ```Text
-  /inventory
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-  #### lottery
-
-  - **作用**
-
-    抽奖
-
-  - **用法**
-
-  ```Text
-  /lottery (星币数量)
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-  #### sendcoin
-
-  - **作用**
-
-    给人星币
-
-  - **用法**
-
-  ```Text
-  /sendcoin (at目标用户) (星币数量 以空格分隔)
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-  #### sign
-
-  - **作用**
-
-    签到
-
-  - **用法**
-
-  ```Text
-  /sign
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-  #### userinfo
-
-  - **作用**
-
-    查看个人信息
-
-  - **用法**
-
-  ```Text
-  /userinfo <at人>
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-  #### userhelp
-
-  - **作用**
-
-    用户功能帮助
-
-  - **用法**
-
-  ```Text
-  /userhelp <指令名或别名>
-  ```
-
-  - **权限/可用范围**
-
-    0. **在群内使用**
-
-  - **别名**
-
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
-
-  ---
-
-
 ## 其他
 
 ### 帮助编写文档
@@ -1079,11 +1099,11 @@ OPTIONS:
 </div>
 ↑ 九镹.png ↑
 
-九镹是 XME-Bot 的开发者，是一个学计算机不太久的新人 owo。
+九镹是 XME-Deon-Bot 的开发者，是一个学计算机不太久的新人 owo。
 
 要是好奇的话，可以来 [这里](https://blog.xzadudu179.top/about/) 看看九九的个人介绍哦！
 
 ## 特别感谢
 
 - [千枫](https://github.com/qfys521)
-- 每一个喜欢使用 XME-Bot 的用户
+- 每一名 XME-Deon-Bot 的用户

@@ -1,6 +1,6 @@
 # 术语表
 
-## XME-Bot / bot
+## XME-Deon-Bot / XME-Bot / bot
 
 用于代表本机器人的任意实例。例如正在某个 qq 群运行的 XME-Bot 机器人。
 
