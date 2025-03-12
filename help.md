@@ -82,7 +82,6 @@
 
 ## 功能列表
 
----
 ### [指令] 7timers
 
 - **作用**
@@ -140,7 +139,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `rank`、 `星币排行`、 `ranking`。
 
   ---
 
@@ -162,7 +161,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `inv`、 `物品栏`。
 
   ---
 
@@ -184,7 +183,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `抽奖`、 `lot`。
 
   ---
 
@@ -206,7 +205,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `转账`、 `给星币`、 `ta`、 `transfer`、 `givecoin`。
 
   ---
 
@@ -228,7 +227,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `签到`、 `check`、 `checkin`、 `register`、 `s`。
 
   ---
 
@@ -250,7 +249,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `个人信息`、 `个人资料`、 `uinfo`、 `info`。
 
   ---
 
@@ -272,7 +271,7 @@
 
   - **别名**
 
-    `coinrank`、 `inventory`、 `lottery`、 `sendcoin`、 `sign`、 `userinfo`、 `userhelp`。
+    `uhelp`、 `用户帮助`、 `uh`。
 
   ---
 
@@ -559,7 +558,7 @@ OPTIONS:
 
   - **别名**
 
-    `wife`。
+    `今日老婆`、 `kklp`、 `看看老婆`。
 
   ---
 
@@ -672,7 +671,7 @@ OPTIONS:
 
 - **别名**
 
-  `看看179`、 `看看九九`、 `看看九镹`、 `peek99`、 `看看99`
+  `看看179`、 `看看九九`、 `看看九镹`、 `peek99`、 `看看99`、 `kk99`、 `kk179`
 
 ---
 
@@ -681,7 +680,7 @@ OPTIONS:
 - **作用**
 
   扔/捡来自各个群组的漂流瓶~
-  神秘力量入侵了大海...现在每捡一次漂流瓶都会让它更加混乱，也更容易碎掉...但是点赞可以让混乱值变少 owo
+  神秘力量入侵了大海...现在每捡一次漂流瓶都会让它更加混乱，也更容易碎掉...但是点赞可以让混乱值变少 嗷呜！
 
 - **指令列表：**
 
@@ -703,7 +702,7 @@ OPTIONS:
 
   - **别名**
 
-    `throw`、 `pickup`、 `cthulhu`。
+    `扔瓶子`、 `扔漂流瓶`、 `扔瓶`。
 
   ---
 
@@ -725,7 +724,7 @@ OPTIONS:
 
   - **别名**
 
-    `throw`、 `pickup`、 `cthulhu`。
+    `捡瓶子`、 `捡漂流瓶`、 `捡瓶`、 `pick`。
 
   ---
 
@@ -747,7 +746,7 @@ OPTIONS:
 
   - **别名**
 
-    `throw`、 `pickup`、 `cthulhu`。
+    `毁坏瓶子`、 `break`、 `break_bottle`。
 
   ---
 
@@ -889,7 +888,7 @@ OPTIONS:
 
   - **别名**
 
-    `inst_kill`、 `inst_restart`。
+    `inst_关机`、 `inst_shutdown`。
 
   ---
 
@@ -912,7 +911,7 @@ OPTIONS:
 
   - **别名**
 
-    `inst_kill`、 `inst_restart`。
+    `inst_重启`、 `inst_rebot`、 `inst_reboot`、 `instRestart`、 `instRebot`、 `instReboot`。
 
   ---
 
@@ -987,7 +986,7 @@ OPTIONS:
 
   - **别名**
 
-    `dice`。
+    `d`。
 
   ---
 
