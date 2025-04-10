@@ -173,6 +173,10 @@ section.cover .cover-main > p:last-child a:first-child:hover {
     margin-bottom: 20px;
 }
 
+.sidebar {
+    padding-right: 15px;
+}
+
 .sidebar nav ul li {
     width: 100%;
     border-bottom: 1px solid #e2a05a33;
