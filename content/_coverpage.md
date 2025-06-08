@@ -2,7 +2,7 @@
 
 ![logo](https://image.179.life/images/deon_avatar_round.png)
 
-# <span style="font-family:'Geist Variable', sans-serif;font-weight:300">XME-Deon-Bot <small>v0.3.1</small></span>
+# <span style="font-family:'Geist Variable', sans-serif;font-weight:300">XME-Deon-Bot <small>v0.4.1</small></span>
 
 > 基于 Nonebot1 实现的多功能 QQ Bot。
 
