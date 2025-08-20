@@ -97,6 +97,8 @@ OPTIONS:
 
 其中 `OPTIONS` 是类 Shell 参数的内容，用户可以输入 `/rm -h` 或 `rm -f` 之类的方法调用 `OPTIONS` 里说明的参数。
 
+> 类 Shell 参数不明确的时候会出现 `参数不足或不正确，请使用 --help 参数查询使用帮助` 提示，此时只需要输入 `/xxx --help` 就可以查看帮助了哦 uwu
+
 ## 权限
 
 由于 XME-Bot 基于 Nonebot1 制作，使用的也是 [Nonebot1 的权限系统](https://v1.nonebot.dev/api/permission.html)。
