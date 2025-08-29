@@ -1274,6 +1274,7 @@ OPTIONS:
 
 ## 发电鸣谢
 
+- (wx) QQ（咖啡机/饮料机） ￥30
 - (afadian) 爱发电用户_c31cc ￥15
 - (afadian) 是紫陌啊 ￥10
 - (afadian) 假设作者是晓拾捌 ￥5
