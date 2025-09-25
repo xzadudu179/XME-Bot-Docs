@@ -6,7 +6,7 @@
 
 > 基于 Nonebot1 实现的多功能 QQ Bot。
 
-- 简单部署，直接使用
+- 功能丰富多样
 - 完全开源，可随意修改功能
 
 [<i class="fa-brands fa-fw fa-lg fa-github"></i> GitHub](https://github.com/xzadudu179/XME-bot-qq/)
